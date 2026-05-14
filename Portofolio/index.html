@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YU</title>
+  <link rel="icon" type="image/jpeg" href="https://res.cloudinary.com/dumxjrkst/image/upload/q_auto/f_auto/v1778595935/YU_wgf31g.png"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- ── Theme restore: harus sebelum render ── -->
+  <script>if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light-mode-pre');</script>
+</head>
+<body>
+
+  <!-- ── Loading Screen ── -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <div class="loader-logo">YU</div>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+      <div class="loader-label">Loading</div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">PORTO</a>
+    <ul class="nav-links">
+      <button id="themeToggle" class="theme-toggle">
+  <span class="theme-toggle-icon">◑</span>
+  <span class="theme-toggle-label">Light</span>
+</button>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal"><span class="eyebrow-line"></span>Creative Developer</div>
+      <h1 class="hero-name reveal">BYU-<br><span class="outline-text">PSTY</span></h1>
+      <div class="hero-title reveal">Graphic Designer &amp; Developer</div>
+      <p class="hero-desc reveal">Merancang pengalaman digital yang menggabungkan estetika, teknologi, dan interaksi yang bermakna.</p>
+      <div class="avail-badge reveal"><span class="avail-dot"></span>Tersedia untuk project baru</div>
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn-primary">Lihat Karya</a>
+        <a href="asset/YU.pdf" download="CV-Bayu-Eko-Nurprasetyo.pdf" class="btn-ghost">Unduh CV <span class="arrow">↗</span></a>
+      </div>
+    </div>
+    <div class="hero-counters reveal">
+      <div class="counter-item"><div class="counter-num" data-target="24">0</div><div class="counter-label">Project</div></div>
+      <div class="counter-item"><div class="counter-num" data-target="3">0</div><div class="counter-label">Tahun Exp</div></div>
+      <div class="counter-item"><div class="counter-num" data-target="12">0</div><div class="counter-label">Klien</div></div>
+    </div>
+    <div class="hero-grid-lines" aria-hidden="true">
+      <div class="grid-line v1"></div><div class="grid-line v2"></div><div class="grid-line h1"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-num">01</span><h2 class="section-title">ABOUT</h2></div>
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <p>Saya adalah seorang creative developer dengan fokus pada visual interaktif dan pengalaman digital. Berawal dari desain grafis, kini saya membangun antarmuka yang menyentuh batas antara seni dan teknologi.</p>
+          <p>Setiap proyek adalah kesempatan untuk mengeksplorasi sesuatu yang belum pernah dibuat sebelumnya — bukan sekadar fungsional, tetapi berkesan.</p>
+          <div class="about-tags">
+            <span class="tag">Jakarta, Indonesia</span><span class="tag">Freelance</span><span class="tag">Open to Collab</span>
+          </div>
+        </div>
+        <div class="skills-list reveal">
+          <div class="skill-row"><span class="skill-name">Adobe Photoshop</span><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div></div></div>
+          <div class="skill-row"><span class="skill-name">Adobe Illustrator</span><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div></div></div>
+          <div class="skill-row"><span class="skill-name">UI Design</span><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div></div></div>
+          <div class="skill-row"><span class="skill-name">Python</span><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div></div></div>
+          <div class="skill-row"><span class="skill-name">React</span><div class="skill-level"><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot filled"></div><div class="skill-dot"></div></div></div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-num">02</span><h2 class="section-title">KARYA</h2></div>
+    </div>
+    <div class="projects-grid">
+
+<article class="project-card has-bg reveal" onclick="window.location.href='project-gfx.html'" style="position:relative;overflow:hidden;">
+  <img src="https://res.cloudinary.com/dumxjrkst/image/upload/q_auto/f_auto/v1778594946/recap_kejxvz.jpg" alt="GFX Desain" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(12,12,12,0.2) 0%, rgba(12,12,12,0.5) 50%, rgba(12,12,12,0.9) 85%, rgba(12,12,12,1) 100%);z-index:1;"></div>
+  <div class="project-inner" style="position:relative;z-index:2;">
+    <div class="project-top"><span class="project-num">001</span><span class="project-arrow">↗</span></div>
+    <div class="project-thumb thumb-gfx" style="background:transparent;border:none;height:120px;">
+    </div>
+    <h3 class="project-title">GFX<br>DESAIN</h3>
+    <p class="project-desc">Karya desain grafis kreatif — poster, artwork, dan visual identity dengan estetika yang kuat dan berkarakter.</p>
+    <div class="project-tags"><span class="tag">Photoshop</span><span class="tag">Illustrator</span><span class="tag">Poster</span></div>
+  </div>
+</article>
+
+<article class="project-card has-bg reveal" onclick="window.location.href='project-feedig.html'" style="position:relative;overflow:hidden;">
+  <img src="https://res.cloudinary.com/dumxjrkst/image/upload/q_auto/f_auto/v1778595118/cover-movie_i2pa2a.jpg" alt="Feed Instagram" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(12,12,12,0.2) 0%, rgba(12,12,12,0.5) 50%, rgba(12,12,12,0.9) 85%, rgba(12,12,12,1) 100%);z-index:1;"></div>
+  <div class="project-inner" style="position:relative;z-index:2;">
+    <div class="project-top"><span class="project-num">002</span><span class="project-arrow">↗</span></div>
+    <div class="project-thumb thumb-ig" style="background:transparent;border:none;height:120px;">
+    </div>
+    <h3 class="project-title">FEED<br>INSTAGRAM</h3>
+    <p class="project-desc">Desain feed Instagram yang kohesif dan estetis — konten visual yang konsisten untuk membangun brand identity di sosial media.</p>
+    <div class="project-tags"><span class="tag">Social Media</span><span class="tag">Branding</span><span class="tag">4:5 Portrait</span></div>
+  </div>
+</article>
+
+<article class="project-card has-bg reveal" onclick="window.location.href='project-infografis.html'" style="position:relative;overflow:hidden;">
+  <img src="https://res.cloudinary.com/dumxjrkst/image/upload/q_auto/f_auto/v1778595616/info_hmp_i4lmln.jpg" alt="Infografis" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(12,12,12,0.2) 0%, rgba(12,12,12,0.5) 50%, rgba(12,12,12,0.9) 85%, rgba(12,12,12,1) 100%);z-index:1;"></div>
+  <div class="project-inner" style="position:relative;z-index:2;">
+    <div class="project-top"><span class="project-num">003</span><span class="project-arrow">↗</span></div>
+    <div class="project-thumb thumb-info" style="background:transparent;border:none;height:120px;">
+    </div>
+    <h3 class="project-title">INFOGRAFIS</h3>
+    <p class="project-desc">Data menjadi visual yang mudah dipahami — infografis informatif dengan layout yang bersih dan hierarki informasi yang jelas.</p>
+    <div class="project-tags"><span class="tag">Data Viz</span><span class="tag">Editorial</span><span class="tag">A4 Portrait</span></div>
+  </div>
+</article>
+
+<article class="project-card has-bg reveal" onclick="window.location.href='project-advertising.html'" style="position:relative;overflow:hidden;">
+  <img src="https://res.cloudinary.com/dumxjrkst/image/upload/q_auto/f_auto/v1778595637/cici_ivin5k.jpg" alt="Advertising" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(12,12,12,0.2) 0%, rgba(12,12,12,0.5) 50%, rgba(12,12,12,0.9) 85%, rgba(12,12,12,1) 100%);z-index:1;"></div>
+  <div class="project-inner" style="position:relative;z-index:2;">
+    <div class="project-top"><span class="project-num">004</span><span class="project-arrow">↗</span></div>
+    <div class="project-thumb thumb-ads" style="background:transparent;border:none;height:120px;">
+    </div>
+    <h3 class="project-title">ADVERTISING</h3>
+    <p class="project-desc">Materi iklan digital dan cetak yang menarik perhatian — kampanye visual yang efektif untuk berbagai platform.</p>
+    <div class="project-tags"><span class="tag">Campaign</span><span class="tag">Print</span><span class="tag">Digital Ads</span></div>
+  </div>
+</article>
+
+<article class="project-card has-bg reveal" onclick="window.location.href='project-banner.html'" style="position:relative;overflow:hidden;">
+  <img src="https://res.cloudinary.com/dumxjrkst/image/upload/q_auto/f_auto/v1778595340/yu_banner_oacqpu.png" alt="Banner" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(12,12,12,0.2) 0%, rgba(12,12,12,0.5) 50%, rgba(12,12,12,0.9) 85%, rgba(12,12,12,1) 100%);z-index:1;"></div>
+  <div class="project-inner" style="position:relative;z-index:2;">
+    <div class="project-top"><span class="project-num">005</span><span class="project-arrow">↗</span></div>
+    <div class="project-thumb thumb-banner" style="background:transparent;border:none;height:120px;">
+    </div>
+    <h3 class="project-title">BANNER</h3>
+    <p class="project-desc">Banner web dan cetak dalam berbagai ukuran — dari leaderboard hingga billboard, dirancang untuk dampak maksimal.</p>
+    <div class="project-tags"><span class="tag">Web Banner</span><span class="tag">Billboard</span><span class="tag">Multi-size</span></div>
+  </div>
+</article>
+
+<article class="project-card reveal" style="cursor:default;">
+  <div class="project-inner" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100%;">
+    <div class="project-top" style="width:100%;">
+      <span class="project-num">006</span>
+      <span class="project-arrow" style="opacity:0.3;">↗</span>
+    </div>
+    <div class="project-thumb thumb-code" style="display:flex;align-items:center;justify-content:center;position:relative;">
+      <div class="code-preview" style="opacity:0.15;position:absolute;">
+        <div class="cp-line" style="width:70%"></div>
+        <div class="cp-line" style="width:50%;margin-left:1rem"></div>
+        <div class="cp-line" style="width:85%"></div>
+        <div class="cp-line" style="width:40%;margin-left:1rem"></div>
+        <div class="cp-line" style="width:60%"></div>
+      </div>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.12em;color:var(--text-dim);position:relative;z-index:1;">COMING<br>SOON</span>
+    </div>
+    <h3 class="project-title"><br>CODE</h3>
+    <p class="project-desc">Proyek pemrograman — web interaktif, visual generatif, tools, dan aplikasi yang dibangun dari nol dengan kode.</p>
+    <div class="project-tags" style="opacity:0.4;"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Coming Soon</span></div>
+  </div>
+</article>
+
+    </div>
+  </section>
+
+    <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+      <span>INFOGRAFIS</span><span class="dot">·</span>
+    </div>
+  </div>
+  
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-num">03</span><h2 class="section-title">KONTAK</h2></div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="contact-big">MARI BUAT<br><span class="outline-text">SESUATU</span><br>BERSAMA.</div>
+        </div>
+        <div class="contact-right reveal">
+          <p class="contact-sub">Punya ide menarik? Mari diskusi.</p>
+          <a href="mailto:hello@namakamu.com" class="contact-email">hello@namakamu.com</a>
+          <div class="socials">
+            <a href="https://www.instagram.com/byupsty?igsh=MzV3dmthNjI3b2Nk" target="_blank" rel="noopener" class="social-link">Instagram</a><a href="https://github.com/YuSetengah" target="_blank" rel="noopener" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a><a href="#" class="social-link">Behance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 — YU</span>
+      <a href="#hero" class="back-top">Kembali ke atas ↑</a>
+      <span class="footer-copy">Dibuat dengan niat</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
